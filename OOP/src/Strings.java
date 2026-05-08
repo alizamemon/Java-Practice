@@ -1,3 +1,19 @@
+class Frog{
+    private int age;
+    private String color;
+
+    public Frog(int age, String color){
+        this.age=age;
+        this.color=color;
+    }
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb. append(age).append(": ").append(color);
+        return sb.toString();
+    }
+}
+
 public class Strings {
     public static void main(String[] args) {
      
@@ -33,5 +49,11 @@ public class Strings {
         for(int i=0; i<20; i++){
             System.out.println(String.format("%-3d: some text here", i));
         }
+
+        Frog f1 = new Frog(2, "green");
+        Frog f2 = new Frog(3, "brown");
+        System.out.println(f1);
+        System.out.println(f2);
     }
 }
+ 
