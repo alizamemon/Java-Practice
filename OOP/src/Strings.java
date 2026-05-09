@@ -38,7 +38,7 @@ public class Strings {
        //Method:3
         StringBuilder a = new StringBuilder();
         a.append("Hello")
-        .append(" ")
+        .append(" " )
         .append("I am a Computer Engineer");
 
         System.out.println(a.toString());

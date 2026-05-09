@@ -1,39 +1,3 @@
-class Person{
-    String name;
-    int age;
-
-    //methods
-    void eat(){
-        System.out.println(name + " is eating");
-    }
-
-    // void speak(){
-    //     System.out.println(name + " is speaking");
-    // }
-
-    int calculateYearsToRetirement(){
-        int yearsLeft = 60 - age;   
-        return yearsLeft;
-    }
-
-    int getAge(){      //getter method to access private variable age
-        return age;
-    }
-
-    public void speak(String msg){
-        System.out.println(msg);
-    }
-
-    public void jump(int height){
-        System.out.println("jumping: " + height + " cm");
-    }
-
-    public void move(String direction, double distance){
-        System.out.println("Moving " + direction + " for " + distance + " meters.");
-    }
-    
-}
-
 public class Basics {
     public static void main(String[] args) {
         Person person1 = new Person();  //person1 is object
