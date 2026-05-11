@@ -19,5 +19,17 @@ public class Upcasting_Downcasting {
         // Upcasting
         Gadget gadget = new Gadget(); // Upcasting: Camera is treated as a Gadget
         Camera camera= new Camera();
+
+        gadget.start();
+        camera.start();
+        camera.snap();
+
+        //upcasting
+        Gadget gadget2 = new Camera();
+        gadget2.start(); // Calls the overridden method in Camera
+       
+        // Downcasting
+        Camera camera2 = (Camera) gadget2; 
+        camera2.snap(); // Now we can call the snap method, which is specific to Camera
     }
 }
