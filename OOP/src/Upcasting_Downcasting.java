@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Gadget{ 
     public void start(){
         System.out.println("Gadget is starting...");
@@ -31,5 +33,15 @@ public class Upcasting_Downcasting {
         // Downcasting
         Camera camera2 = (Camera) gadget2; 
         camera2.snap(); // Now we can call the snap method, which is specific to Camera
+    
+    
+    
+        ArrayList<String> list= new ArrayList<String>();
+        showList(list);
+    }
+    public static void showList(ArrayList<String> list){
+        System.out.println("Showing list: " + list);
+
+    
     }
 }
