@@ -1,5 +1,18 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+
+class Box<T>{
+    private T item;
+    
+    public void add(T item){
+        this.item= item;
+    }
+
+    public T get(){
+        return item;
+    }
+}
+
 public class Generics {
     public static void main(String[] args) {
         //old style without generics
@@ -25,9 +38,17 @@ public class Generics {
         String value = map.get(1); // No cast needed
         System.out.println(value);
 
-        
+        Box<String> stringBox = new Box<>();
+        stringBox.add("Laptop");
+        Box<Integer> intBox = new Box<>();
+        intBox.add(123);
+        //stringBox.add(123); // Compile-time error: incompatible types
 
+        String boxedString = stringBox.get();
+        Integer boxedInteger = intBox.get();
 
+        System.out.println(boxedString);
+        System.out.println(boxedInteger);
 
     }
 }
