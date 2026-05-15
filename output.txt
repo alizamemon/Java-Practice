@@ -1,0 +1,3 @@
+Hello Aliza!
+Writing to a file is easy in Java.
+I am learning File I/O today.

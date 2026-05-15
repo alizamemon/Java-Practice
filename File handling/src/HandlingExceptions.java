@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 public class HandlingExceptions {
  public static void main(String[] args) {
     File f1= new File("test.txt");
-
+    
     try{
     FileReader fr = new FileReader(f1);
     System.out.println("File successfully opened");
